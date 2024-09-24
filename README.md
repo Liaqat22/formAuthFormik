@@ -1,4 +1,4 @@
-## QueryClient and QueryClientProvider
+### QueryClient and QueryClientProvider
 
  import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
@@ -19,5 +19,7 @@ root.render(
 );
 
 ### useQuery
+for fetching api data
 
 ### useMutation 
+for crud operations
