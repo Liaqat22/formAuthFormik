@@ -1,23 +1,31 @@
 import React from 'react'
 import SidebarLinks from '../pages/SidebarLinks'
+import { Outlet } from 'react-router-dom'
+import { Grid2 } from '@mui/material'
+import Layout from '../layout/Layout'
 
 function Profile() {
-  return (
-    <>
-    <div className = "container-fluid">
-        <div className='row d-flex justify-content-evenly'>
+    return (
+        <>
+            <div className='parent-grid'>
+                <Grid2 container spacing={2} columns={12} sx={{
+                    display: "flex", justifyContent: "space-evenly"
+                }} >
+                    <Grid2 size={{ xs: 12, sm: 12, md: 2, }} className="sidebarlinks-grid">
+                        <SidebarLinks />
+                    </Grid2>
 
-            <div className='col-md-2'>
-                <SidebarLinks/>
+                    <Grid2 size={{ xs: 12, sm: 12, md: 10, }} className="content-grid">
+                        <Layout>
+                            <Outlet />
+                        </Layout>
+                    </Grid2>
+
+
+                </Grid2>
             </div>
 
-            <div className='col-md-9'>
-            Profile
-            </div>
-        </div>
-    </div>
-   
-    </>  )
+        </>)
 }
 
 export default Profile
