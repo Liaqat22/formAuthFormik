@@ -3,7 +3,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <Box margin="1rem 0" >
+    <Box marginTop="1rem" >
     <Grid2 container spacing={2} columns={12} sx={{
       display : "flex",justifyContent : 'space-between' , alignItems : "center"
     }}>

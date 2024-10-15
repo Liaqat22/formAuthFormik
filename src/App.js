@@ -1,5 +1,4 @@
 import './App.css';
-import { Typography } from "@mui/material"
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -18,7 +17,6 @@ import Projects from './profileItems/Projects';
 function App() {
   return (
     < >
-      <Typography variant="h5" sx={{ textAlign: "center", fontWeight: "bold" }} className='mt-3'>Admin Panel</Typography>
 
       <ToastContainer autoClose={2000} />
       <Routes>

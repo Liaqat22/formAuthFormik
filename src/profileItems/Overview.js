@@ -143,7 +143,7 @@ function Overview() {
           <Box mb={2} >
             <Typography gutterBottom variant='body1' fontWeight="700" padding=".6rem">profile information</Typography>
             <Typography variant='body2'>
-              Hi, I’m Mark Johnson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality).
+              Hi, I’m Liaqat ALi, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality).
             </Typography>
           </Box>
 
@@ -166,17 +166,22 @@ function Overview() {
             <Typography variant="h6" display="flex" justifyContent="space-around" alignItems="center" sx={{
               borderRadius: "2rem",
               padding: ".5rem",
-              background: "linear-gradient(177deg, rgb(2 2 6 / 73%) 19.41%, rgb(14 20 50) 76.65%);", mt: 2
+              background: "linear-gradient(177deg, rgb(2 2 6 / 73%) 19.41%, rgb(14 20 50) 76.65%);", mt: 2,
+              fontSize:"1.5rem"
             }}>
 
-              {/* Facebook Icon with link */}
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook" /></a>
+              {/* Email Icon with mailto link */}
+              <a href="https://liaqatali097306@gmail.com/"> <i className="fas fa-envelope " /> </a>
+
 
               {/* LinkedIn Icon with link */}
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin " /></a>
+              <a href="https://www.linkedin.com/in/liaqat-ali-bb086522a/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin " /></a>
 
-              {/* Email Icon with mailto link */}
-              <a href="mailto:someone@example.com"> <i className="fas fa-envelope " /> </a>
+              {/* Facebook Icon with link */}
+              <a href="https://github.com/Liaqat22" target="_blank" rel="noopener noreferrer"><i className="fab fa-github" /></a>
+              {/* Facebook Icon with link */}
+              <a href="https://wa.me/qr/FTMDCAW2J6XEP1" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp" /></a>
+
 
             </Typography>
           </Box>

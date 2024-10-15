@@ -57,13 +57,13 @@ function TableList() {
                                             </TableCell>
 
                                             <TableCell>
-                                                <Typography variant='body2' sx={tableStyle}>
+                                                <Box sx={tableStyle}>
                                                     <AvatarGroup max={3}>
                                                         {t?.members?.map((m, i) => (
                                                             <Avatar alt={m?.alt} src={m?.src} key={i} />
                                                         ))}
                                                     </AvatarGroup>
-                                                </Typography>
+                                                </Box>
                                             </TableCell>
 
                                             <TableCell><Typography variant='body2' sx={tableStyle}>{t.cost}</Typography></TableCell>

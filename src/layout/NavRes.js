@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import { List, ListItem, ListItemIcon, ListItemText, Typography, Drawer, } from '@mui/material';
+import { List, ListItem, ListItemIcon, ListItemText, Typography, Drawer, Box, } from '@mui/material';
 import { NavLink } from 'react-router-dom';
+import logoTop from "../imgs/logo-top.png"
+import logo from '../imgs/dashboard-logo.png'
 
 
 function NavRes() {
@@ -25,6 +27,17 @@ function NavRes() {
 
     const drawerContent = (
         <div role="presentation" onClick={toggleDrawer} onKeyDown={toggleDrawer} >
+            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <Box component='img' src={logoTop} alt='dashboard-logo' sx={{ height: "60px", width: "60px" }} />
+                <Box>
+                    <Typography color='#65d7f3' fontSize="1.3rem" className='mx-1' fontWeight="700">Liaqat Ali</Typography>
+                    <Typography color='#faedcd' fontSize=".7rem" className='mx-1'>( React
+                        <span style={{ color: "#98f5e1", fontWeight: "700" }}> & </span>UI Xpert )
+                    </Typography>
+                </Box>
+            </Box>
+            <div className='d-flex justify-content-center'> <hr style={{ margin: ".5rem 0" , width:"80%" , border: "1px solid white"}} /></div>
+
             <List>
                 {links?.map((item, i) => (
                     <ListItem
@@ -35,7 +48,7 @@ function NavRes() {
                         key={i}
                         sx={{ textTransform: "capitalize" }}
                     >
-                        <ListItemIcon>
+                        <ListItemIcon sx={{display : "flex" , alignItems:"center" , justifyContent:"center"}}>
                             <i className={`${item.icon} text-white`} />
                         </ListItemIcon>
                         <ListItemText primary={<Typography>{item.title}</Typography>} />
@@ -43,7 +56,7 @@ function NavRes() {
                 ))}
             </List>
 
-            <Typography variant='body2' sx={{ textTransform: "capitalize", fontWeight: "700", padding: "10px" }}>Account Pages</Typography>
+            <Typography variant='body2' sx={{ textTransform: "capitalize", fontWeight: "700", padding: "5px",fontSize:"smaller" }}>Account Pages</Typography>
 
             <List>
                 {accounts?.map((item, i) => (
@@ -55,13 +68,15 @@ function NavRes() {
                         key={i}
                         sx={{ textTransform: "capitalize" }}
                     >
-                        <ListItemIcon>
+                        <ListItemIcon sx={{display : "flex" , alignItems:"center" , justifyContent:"center"}}>
                             <i className={`${item.icon} text-white`} />
                         </ListItemIcon>
                         <ListItemText primary={<Typography>{item.page}</Typography>} />
                     </ListItem>
                 ))}
             </List>
+            <Box component='img'  src={logo} alt='dashboard-logo' sx={{height:"200px" , width:"100%"}}/>
+
         </div>
     );
   return (

@@ -47,17 +47,14 @@ function DashCharts() {
                 {/* Active users  */}
                 <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "space-evenly" }} marginTop={.5} paddingTop={1}>
                     <Box>
-                        <Box>
                             <Typography fontWeight={700}>Active Users</Typography>
                             <Typography variant='body2' color='white'><span style={{ color: "lightgreen" }}>(+23)</span> than last week</Typography>
-                        </Box>
                     </Box>
 
                     {/* Active users grid */}
-                    <Box>
                         <Grid2 spacing={1} container columns={{ xs: 4, sm: 8, md: 12 }} sx={{ padding: "1rem 0" }}>
-                            {activeUser?.map((u) => (
-                                <Grid2 size={{ xs: 2, sm: 4, md: 3, }} component={Paper} sx={{ background: "rgb(6 11 40)", borderRadius: "1rem", padding: ".7rem 0", textAlign: "center" }} >
+                            {activeUser?.map((u,i) => (
+                                <Grid2 size={{ xs: 2, sm: 4, md: 3, }} component={Paper} sx={{ background: "rgb(6 11 40)", borderRadius: "1rem", padding: ".7rem 0", textAlign: "center" }} key={i}>
 
                                     <Typography variant='body2' fontSize="small" className='m-1'> <span style={{
                                         padding: ".2rem .3rem",
@@ -83,7 +80,6 @@ function DashCharts() {
                                 </Grid2>
                             ))}
                         </Grid2>
-                    </Box>
                 </Box>
 
             </Grid2>
