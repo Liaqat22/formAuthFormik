@@ -101,7 +101,7 @@ function Overview() {
           <Box >
             <Box padding=".6rem">
               <Typography gutterBottom variant='body1' fontWeight="700" >Car information</Typography>
-              <Typography variant='body2'> Hello, Mark Johnson! Your Car is ready.  </Typography>
+              <Typography variant='body2'> Hello, Liaqat Ali! Your Car is ready.  </Typography>
             </Box>
 
             <div style={{ position: 'relative' }}>

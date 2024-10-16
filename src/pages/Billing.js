@@ -1,7 +1,9 @@
 import React from 'react'
 import SidebarLinks from './SidebarLinks'
-import { Grid2, Typography } from '@mui/material'
+import { Grid2 } from '@mui/material'
 import Layout from '../layout/Layout'
+import PaymentDetails from '../billingItems/PaymentDetails'
+import BillingInfo from '../billingItems/BillingInfo'
 
 
 function Billing() {
@@ -19,7 +21,8 @@ function Billing() {
           <Grid2 size={{ xs: 12, sm: 12, md: 10, }} className="content-grid">
 
             <Layout>
-              <Typography>Billing</Typography>
+             <PaymentDetails/>
+             <BillingInfo/>
             </Layout>
             
           </Grid2>
