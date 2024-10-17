@@ -9,7 +9,7 @@ function SidebarLinks() {
         { title: "dashboard", icon: 'fa-solid fa-home', url: "" },         // Home icon for dashboard
         { title: "tables", icon: 'fa-solid fa-table', url: "table" },      // Table icon for tables
         { title: "billing", icon: 'fa-solid fa-file-invoice-dollar', url: "billing" }, // Invoice icon for billing
-        { title: "RTL", icon: 'fa-solid fa-language', url: "rtl" },        // Language icon for RTL
+        { title: "Error 404", icon: 'fas fa-exclamation-triangle', url: "error" },        // eror page
     ];
 
 

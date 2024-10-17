@@ -93,28 +93,30 @@ export const theme = createTheme({
           },
         },
        
-        // MuiTextField: {
-        //   styleOverrides: {
-        //     root: {
+        MuiTextField: {
+          styleOverrides: {
+            root: {
               
-        //       '& label.Mui-focused': {
-        //         color: 'red', // placeholder styling
-        //       },
-        //       '& .MuiOutlinedInput-root': {
-        //         '& fieldset': {
-        //           borderColor: 'yellow', // field border
-        //         },
-        //         '&:hover fieldset': {
-        //           borderColor: 'orange', // hover style
-        //         },
-        //         '&.Mui-focused fieldset': {
-        //           borderColor: 'purple', // border style onFocus
-        //         },
+              '& label.Mui-focused': {
+                color: 'white', // placeholder styling
+              },
+              '& .MuiOutlinedInput-root': {
+                '& fieldset': {
+                  borderColor: 'white', // field border
+                  borderRadius : "1rem"
+                },
+                '&:hover fieldset': {
+                  borderColor: 'orange', // hover style
+                  transition : ".3s"
+                },
+                // '&.Mui-focused fieldset': {
+                //   borderColor: 'purple', // border style onFocus
+                // },
                
-        //       },
-        //     },
-        //   },
-        // },
+              },
+            },
+          },
+        },
        
     },
     

@@ -12,7 +12,7 @@ function NavRes() {
         { title: "dashboard", icon: 'fa-solid fa-home', url: "/" },
         { title: "tables", icon: 'fa-solid fa-table', url: "/table" },
         { title: "billing", icon: 'fa-solid fa-file-invoice-dollar', url: "/billing" },
-        { title: "RTL", icon: 'fa-solid fa-language', url: "/rtl" },
+        { title: "Error 404", icon: 'fas fa-exclamation-triangle', url: "/error" },        // eror page
     ];
 
     const accounts = [

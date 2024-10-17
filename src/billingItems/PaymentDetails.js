@@ -9,7 +9,9 @@ function PaymentDetails() {
         borderRadius: '1rem',
         display: "flex",
         justifyContent: "space-between",
-        alignItems: "center"
+        alignItems: "center",
+        margin : ".5rem 0"
+
     }
     const invoiceData = [
         {
@@ -126,19 +128,18 @@ function PaymentDetails() {
                             minHeight: "140px",
                             padding: "1rem",
                             display: "flex", justifyContent: "space-around", flexDirection: "column"
-
-                        }}>
+                        }} >
                             <Box display="flex" justifyContent="space-between" alignItems="center">
                                 <Typography variant='body1' fontWeight={700}>Payment Method</Typography>
                                 <Button variant='contained' sx={{ bgcolor: 'rgb(0, 117, 255)', fontSize: ".7rem", fontWeight: "700", borderRadius: ".5rem" }}>add new card</Button>
                             </Box>
-                            <Box display="flex" justifyContent="space-between" alignItems="center">
+                            <Box display="flex" justifyContent="space-between" alignItems="center" className = "payment-method mt-2" >
 
-                                <div style={paymentMethodStyle}>
+                                <div style={paymentMethodStyle} className='payment-method-inputs'>
                                     <Typography variant='body1' fontWeight={700}><i className="fas fa-credit-card mx-2" /> 7812 2139 0823 XXXX</Typography>
                                     <Button variant='text' color='white'><i className='fas fa-pencil-alt' /></Button>
                                 </div>
-                                <div style={paymentMethodStyle}>
+                                <div style={paymentMethodStyle} className='payment-method-inputs'>
                                     <Typography variant='body1' fontWeight={700}><i className="fab fa-cc-visa mx-2" /> 7812 2139 0823 XXXX</Typography>
                                     <Button variant='text' color='white'><i className='fas fa-pencil-alt' /></Button>
                                 </div>

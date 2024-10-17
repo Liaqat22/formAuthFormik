@@ -28,7 +28,7 @@ function BillingInfo() {
                                     margin: "1rem  0",
                                     display: "flex", justifyContent: "space-between",
 
-                                }}>
+                                }} className='billing-info'>
                                     <div>
                                         <Typography variant='body2' color='white'>{item?.name}</Typography>
                                         <List>

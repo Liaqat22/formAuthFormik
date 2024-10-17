@@ -26,6 +26,9 @@ ul , li{
 a{
   color: inherit;
 }
+.fas,.fab,.fa {
+  cursor: pointer;
+}
 
 .mui-list-item{
  color: white !important;
@@ -99,13 +102,23 @@ width: 50%;
 
 
 @media screen and (min-width : 300px) and (max-width:499px) {
- .profile-tabs {
-  flex-direction: column;
+ .profile-tabs , .payment-method {
+  flex-direction: column !important;
+ }
+
+}
+@media screen and (min-width : 0px) and (max-width:670px) {
+ .payment-method, .billing-info {
+  flex-direction: column !important;
+
+ }
+ .payment-method-inputs{
+  width: 100% !important;
  }
 
 }
 @media screen and (min-width : 500px) and (max-width:767px) {
-  .col-md-5{
+  .col-md-5 {
     width: 50%;
     white-space: nowrap;
   }

@@ -11,6 +11,7 @@ import SignUp from "./accounts/SignUp"
 import Overview from './profileItems/Overview';
 import Team from './profileItems/Team';
 import Projects from './profileItems/Projects';
+import Error404 from './pages/Error404';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/' element={<Dashboard />} />
         <Route path='/table' element={<Tables />} />
         <Route path='/billing' element={<Billing />} />
+        <Route path='/error' element={<Error404 />} />
 
         {/* accounts */}
         <Route path='/profile' element={<Profile />}>
