@@ -5,7 +5,7 @@ import Layout from '../layout/Layout';
 function SignInUpParent({ children }) {
     return (
         <>
-            <div className="parent-grid" style={{ position: 'relative', overflow: 'hidden' }}>
+            <div className="parent-grid" style={{ position: 'relative',  }}>
                 {/* Background Image */}
                 <div
                     style={{

@@ -118,7 +118,7 @@ function SignUp() {
                     </Button>
                 </form>
                 <Typography variant='body2' color='white' mt={2}>Already have an account?
-                    <NavLink to="/signIn"> SignIp</NavLink></Typography>
+                    <NavLink to="/signIn"> SignIn</NavLink></Typography>
             </SignInUpParent>
 
         </>

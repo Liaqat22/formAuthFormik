@@ -133,7 +133,8 @@ const options2 = {
                         borderRadius: '2rem',
                         display: 'flex',
                         justifyContent: 'space-between',
-                        alignItems: 'center'
+                        alignItems: 'center',
+                        minHeight:"120px"
                     }
                 }>
 
@@ -158,7 +159,8 @@ const options2 = {
                         borderRadius: '2rem',
                         display: 'flex',
                         justifyContent: 'space-between',
-                        alignItems: 'center'
+                        alignItems: 'center',
+                        minHeight:"120px"
                     }}>
                     <div className='text'>
                         <Typography variant='body2' fontSize=".7rem" whiteSpace="nowrap">Efficiency</Typography>
@@ -179,7 +181,8 @@ const options2 = {
                         borderRadius: '2rem',
                         display: 'flex',
                         justifyContent: 'space-between',
-                        alignItems: 'center'
+                        alignItems: 'center',
+                        minHeight:"120px"
                     }
                 }>
 
@@ -204,7 +207,8 @@ const options2 = {
                         borderRadius: '2rem',
                         display: 'flex',
                         justifyContent: 'space-between',
-                        alignItems: 'center'
+                        alignItems: 'center',
+                        minHeight:"120px"
                     }}>
                     <div className='text'>
                         <Typography variant='body2' fontSize=".7rem" whiteSpace="nowrap">This Week</Typography>
