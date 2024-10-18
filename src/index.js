@@ -10,9 +10,9 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      staleTime: 10000
+  defaultOptions:{
+    queries:{
+      staleTime : 10000
     }
   }
 })
@@ -20,9 +20,9 @@ const queryClient = new QueryClient({
 root.render(
   <ThemeProvider theme={theme}>
     <QueryClientProvider client={queryClient}>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </QueryClientProvider>
   </ThemeProvider>
 );

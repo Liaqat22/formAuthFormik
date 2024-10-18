@@ -10,86 +10,18 @@ font-family: 'Rajdhani', sans-serif; */
 }
 body{
   font-family: 'Poppins', sans-serif;
-  background-image: url("../src/imgs/body-background.png");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background: url("https://demos.creative-tim.com/vision-ui-dashboard-react/static/media/body-background.9e7d96f6.png") 0% 0% / cover; */
-  color: white !important;
 }
 .row{
   padding: 1rem .5rem;
 }
-ul , li{
-  list-style: none;
+.tableheadCell{
+  font-weight: bold !important;
+  color: white !important;
 }
-a{
-  color: inherit;
-}
-.fas,.fab,.fa {
-  cursor: pointer;
+.col-md-4 , .col-md-5 , .col-md-6{
+  margin-bottom: .8rem;
 }
 
-.mui-list-item{
- color: white !important;
-}
-.mui-list-item.active{
-  background: rgb(26, 31, 55) !important;
-  border-radius: 1rem !important;
-}
-.parent-grid{
-  padding: 1rem 1.5rem !important;
-}
-
-/* ======================================= Dashboard ======================================= */
-.db-col-main{
-  padding: .6rem 1.2rem  ;
-}
-.circle-progress-outer{
-  border-radius: 1rem;
-  padding: 0.8rem .7rem;
-  background: linear-gradient(126.97deg, rgb(6, 11, 40) 28.26%, rgb(10, 14, 35) 91.2%);
-position: relative;
-bottom: .3rem;
-}
-.MuiAvatar-circular{
-  width: 1.5rem !important;
-  height: 1.5rem !important;
-  font-size: x-small !important;
-  background: transparent !important;
-}
-/* ======================================= Dashboard ======================================= */
-/* ======================================= Tables ======================================= */
-.tabelcell-head-typo{
-  font-size: smaller !important;
-  font-weight: 700 !important;
-}
-/* ======================================= Tables ======================================= */
-/* ======================================= Profile ======================================= */
-.profile-tab{
-  text-decoration: none;
-  color: white;
-  padding: .5rem 1.5rem ;
-
-}
-.profile-tab.active{
-  border-radius: 1rem;
-  background: rgb(0 117 255);
-}
-/* Navbar =========================*/
-.MuiDrawer-paper{
-    min-width: 60% !important;
-    padding: 1rem !important;
-    background-image: url("../src/imgs/body-background.png")  !important;
-    background-position: top center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-}
-.navRes-links{
-  display: none;
-}
-/* Navbar =============================== */
-/* ======================================= Profile ======================================= */
 @media print {
  
   .col-md-4 , .col-md-5 , .col-md-6{
@@ -101,37 +33,9 @@ width: 50%;
 }
 
 
-@media screen and (min-width : 300px) and (max-width:499px) {
- .profile-tabs , .payment-method {
-  flex-direction: column !important;
- }
-
-}
-@media screen and (min-width : 0px) and (max-width:670px) {
- .payment-method, .billing-info {
-  flex-direction: column !important;
-
- }
- .payment-method-inputs{
-  width: 100% !important;
- }
-
-}
 @media screen and (min-width : 500px) and (max-width:767px) {
-  .col-md-5 {
+  .col-md-5{
     width: 50%;
     white-space: nowrap;
   }
- 
-}
-@media screen and (min-width : 0px) and (max-width:1250px) {
- .sidebarlinks-grid{
-  display: none !important;
- }
- .content-grid{
-  width: 100% !important;
- }
- .navRes-links{
-  display: block;
-}
 }

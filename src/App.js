@@ -1,45 +1,31 @@
 import './App.css';
+import {  Typography } from "@mui/material"
+import AllProducts from './pages/AllProducts';
 import { Route, Routes } from 'react-router-dom';
+import ProductDetails from './pages/ProductDetails';
+import AddProduct from './pages/AddProduct';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Dashboard from './pages/Dashboard';
-import Tables from './pages/Tables';
-import Billing from './pages/Billing';
-import Profile from "./accounts/Profile"
-import SignIn from "./accounts/SignIn"
-import SignUp from "./accounts/SignUp"
-import Overview from './profileItems/Overview';
-import Team from './profileItems/Team';
-import Projects from './profileItems/Projects';
-import Error404 from './pages/Error404';
+import EditProduct from './pages/EditProduct';
 
 
 
 function App() {
   return (
     < >
+      <Typography variant="h5" sx={{textAlign:"center" , fontWeight:"bold"}} className='mt-3'>
+        React App with Tanstack query
+        </Typography>
+        <ToastContainer />
+     <Routes>
+      <Route path='/' element = { <AllProducts/>}/>
+      <Route path='/addproduct' element = { <AddProduct/>}/>
+      <Route path='/editproduct/:pid' element = { <EditProduct/>}/>
+      <Route path='/productDetails/:pid' element = { <ProductDetails/>}/>
+      <Route path="*" element={<div>Page Not Found</div>} />
 
-      <ToastContainer autoClose={2000} />
-      <Routes>
-        <Route path='/' element={<Dashboard />} />
-        <Route path='/table' element={<Tables />} />
-        <Route path='/billing' element={<Billing />} />
-        <Route path='/error' element={<Error404 />} />
-
-        {/* accounts */}
-        <Route path='/profile' element={<Profile />}>
-          <Route index  element={<Overview />} />  {/* Default nested route for /profile */}
-          <Route path='team' element={<Team />} />
-          <Route path='projects' element={<Projects />} />
-        </Route>
-
-        <Route path='/signin' element={<SignIn />} />
-        <Route path='/signup' element={<SignUp />} />
-
-
-
-        <Route path='*' element={"Page not found"} />
-      </Routes>
+     </Routes>
+     
     </>
   );
 }
