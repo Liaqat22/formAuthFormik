@@ -1,10 +1,6 @@
-<<<<<<< HEAD
+
 const fetchingProducts = 'https://dummyjson.com/products'
 const addProduct = 'https://dummyjson.com/products/add'
+const searchproducts = 'https://dummyjson.com/products/search?q='
 
-=======
-const fetchingProducts = 'https://dummyjson.com/products'
-const addProduct = 'https://dummyjson.com/products/add'
-
->>>>>>> 61c3f86302fb764f8c897bf883975207dfe05100
-export {fetchingProducts , addProduct}
+export {fetchingProducts , addProduct ,searchproducts}

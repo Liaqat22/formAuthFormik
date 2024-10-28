@@ -6,19 +6,15 @@
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@mui/material": "^6.0.2",
-<<<<<<< HEAD
     "@mui/x-charts": "^7.19.0",
-=======
-    "@mui/x-charts": "^7.15.0",
->>>>>>> 61c3f86302fb764f8c897bf883975207dfe05100
     "@tanstack/react-query": "^5.56.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-<<<<<<< HEAD
     "antd": "^5.21.1",
     "apexcharts": "^3.54.0",
     "axios": "^1.7.7",
+    "formik": "^2.4.6",
     "react": "^18.3.1",
     "react-apexcharts": "^1.4.1",
     "react-countup": "^6.5.3",
@@ -26,24 +22,14 @@
     "react-router-dom": "^6.26.1",
     "react-scripts": "5.0.1",
     "react-scroll-trigger": "^0.6.14",
-=======
-    "axios": "^1.7.7",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.1",
-    "react-scripts": "5.0.1",
->>>>>>> 61c3f86302fb764f8c897bf883975207dfe05100
     "react-to-print": "^2.15.1",
     "react-toastify": "^10.0.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^1.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
-<<<<<<< HEAD
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
-=======
-    "build": "react-scripts build",
->>>>>>> 61c3f86302fb764f8c897bf883975207dfe05100
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -7,12 +7,14 @@ import AddProduct from './pages/AddProduct';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import EditProduct from './pages/EditProduct';
+import Categories from './pages/Categories';
 
 
 
 function App() {
   return (
     < >
+    <Categories/>
       <Typography variant="h5" sx={{textAlign:"center" , fontWeight:"bold"}} className='mt-3'>
         React App with Tanstack query
         </Typography>
